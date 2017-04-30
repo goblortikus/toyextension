@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Toy Extension",
+  "description": "Monir test extension.",
+  "version": "0.0.6",
+  "background": {
+    "scripts": [
+      "event.js"
+    ],
+    "persistent": true
+  },
+  // "oauth2": {
+  //   "client_id": "574873802275-fn3br7s4kehsgbk2f4cfj8cqmgqdu857.apps.googleusercontent.com",
+  //   "scopes": []
+  // },
+  "browser_action": {
+    "default_title": "MOMO Chrome",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": [],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "tabs", 
+    "activeTab",
+    "identity",
+    "webNavigation"
+  ],
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "128": "img/icon128.png"
+  },
+  "web_accessible_resources": [
+  ]
+}
