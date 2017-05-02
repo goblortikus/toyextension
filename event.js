@@ -1,3 +1,21 @@
+
+  var socket = io('http://localhost:4099');
+
+  console.log('init socket',socket);
+  socket.on('connect', function(){
+    console.log('chrome ex did connect', socket);
+    socket.emit('roomy',{});
+
+  });
+
+  socket.on('event', function(data){
+    console.log('chrome saw EVENT')
+  });
+  socket.on('disconnect', function(something){
+    console.log('chrome ex did disconnect',something)
+  });
+
+
 console.log('momo event.js')
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo,tab){

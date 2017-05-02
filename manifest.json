@@ -5,6 +5,7 @@
   "version": "0.0.6",
   "background": {
     "scripts": [
+      "./node_modules/socket.io-client/dist/socket.io.js",
       "event.js"
     ],
     "persistent": true
@@ -28,7 +29,8 @@
     "tabs", 
     "activeTab",
     "identity",
-    "webNavigation"
+    "webNavigation",
+    "*://localhost/*"
   ],
   "icons": {
     "16": "img/icon16.png",

@@ -1,0 +1,22 @@
+{
+  "name": "toyextension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goblortikus/toyextension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goblortikus/toyextension/issues"
+  },
+  "homepage": "https://github.com/goblortikus/toyextension#readme",
+  "dependencies": {
+    "socket.io-client": "^1.7.3"
+  }
+}
